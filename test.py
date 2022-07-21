@@ -6,6 +6,7 @@ import torch.nn as nn
 from PIL import Image
 from torchvision import models, transforms
 
+# Line to check if nvidia graphics card is supported.
 # device_name = "cuda:0:" if torch.cuda.is_available() else "cpu"
 device_name = "cpu"
 device = torch.device(device_name)
